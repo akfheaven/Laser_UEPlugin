@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{A79AC99E-4EA8-2BEF-60B3-E598676AA37C}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "UELaserSDK",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

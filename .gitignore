@@ -1,0 +1,10 @@
+Saved/*
+DerivedDataCache/*
+Intermediate/*
+Binaries/
+*.sdf
+*.opensdf
+Plugins/UE_LaserSDK/Intermediate/
+Plugins/UE_LaserSDK/Binaries/
+.vs/
+Build/

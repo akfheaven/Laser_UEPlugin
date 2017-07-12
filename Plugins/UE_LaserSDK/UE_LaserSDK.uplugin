@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "UE_LaserSDK",
+	"Description": "Laser Pose SDK",
+	"Category": "Other",
+	"CreatedBy": "AK",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UE_LaserSDK",
+			"Type": "Developer",
+			"LoadingPhase": "Default"
+		}
+	]
+}
