@@ -30,7 +30,7 @@ public:
 
 
 private :
-	FQuat poseTempQuat;
+	FQuat poseTempQuat, roty180;
 	FVector poseTempVec;
 	
 };

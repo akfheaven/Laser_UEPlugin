@@ -4,7 +4,6 @@
 #include "Core.h"
 #include "ModuleManager.h"
 #include "IPluginManager.h"
-#include "ExampleLibrary.h"
 
 
 
@@ -26,7 +25,7 @@ void FUE_LaserSDKModule::StartupModule()
 	//LibraryPath = FPaths::Combine(*BaseDir, TEXT("Binaries/ThirdParty/UE_LaserSDKLibrary/Win64/ExampleLibrary.dll"));
 
 #elif PLATFORM_MAC
-    LibraryPath = FPaths::Combine(*BaseDir, TEXT("Source/ThirdParty/UE_LaserSDKLibrary/Mac/Release/libExampleLibrary.dylib"));
+    //LibraryPath = FPaths::Combine(*BaseDir, TEXT("Source/ThirdParty/UE_LaserSDKLibrary/Mac/Release/libExampleLibrary.dylib"));
 #endif // PLATFORM_WINDOWS
 
 	//ExampleLibraryHandle = !LibraryPath.IsEmpty() ? FPlatformProcess::GetDllHandle(*LibraryPath) : nullptr;
@@ -56,8 +55,8 @@ void FUE_LaserSDKModule::InitSdk()
 {
 	if (isIinit) return;
 	FString LaserDLLPath;
-	LaserDLLPath = FPaths::Combine(TEXT("Y:/Projects/UEProjs/UELaserSDK/Plugins/UE_LaserSDK/Source/ThirdParty/LaserSDK/lib/x64/Laser_sdk_lib.dll"));
-	//LaserDLLPath = FPaths::Combine(*BaseDir, TEXT("Source/ThirdParty/LaserSDK/lib/x64/Laser_sdk_lib.dll"));
+	//LaserDLLPath = FPaths::Combine(TEXT("Y:/Projects/UEProjs/UELaserSDK/Plugins/UE_LaserSDK/Source/ThirdParty/LaserSDK/lib/x64/Laser_sdk_lib.dll"));
+	LaserDLLPath = FPaths::Combine(TEXT("C:/Laser_sdk_lib.dll"));
 	void* LibraryHandle = !LaserDLLPath.IsEmpty() ? FPlatformProcess::GetDllHandle(*LaserDLLPath) : nullptr;
 
 	if (LibraryHandle)

@@ -9,6 +9,10 @@ UTrackCompoent::UTrackCompoent()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
+	roty180.X = 0;
+	roty180.Y = 1;
+	roty180.Z = 0;
+	roty180.W = 0;
 }
 
 
@@ -31,7 +35,7 @@ void UTrackCompoent::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 		poseTempQuat.X = var->Qx;
 		poseTempQuat.Y = var->Qy;
 		poseTempQuat.Z = var->Qz;
-		pose.SetRotation(poseTempQuat);
+		pose.SetRotation(roty180 * poseTempQuat * roty180);
 
 		poseTempVec.X = var->Px;
 		poseTempVec.Y = var->Py;
